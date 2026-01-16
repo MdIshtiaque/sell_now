@@ -1,0 +1,63 @@
+SellNow: Project Instructions
+You are given a partially complete PHP application (Digital Marketplace). This is
+not a finished product. It is a "working" prototype, but it lacks an architectural
+soul. It was built by a developer who focused on what the code does, rather than
+how the code lives.
+Your task is to take this raw material and introduce engineering maturity. We do
+not want a feature-complete app; we want a demonstration of your professional
+standard.
+The Constraints
+No Frameworks: You are not allowed to use Laravel, Symfony, or similar. You
+must define the architecture yourself.
+Evolution, Not Erasure: Do not delete everything and start over. Show us how
+you refactor and bridge the gap between "legacy" and "modern."
+Tooling: You have Composer and the PHP 8.x ecosystem at your disposal.
+Use them wisely.
+Our Interest: Your Philosophy
+We have intentionally left the "requirements" vague. We aren't looking for a
+specific set of features; we are looking for your perspective on the following:
+SellNow: Project Instructions 1
+The Responsibility of a Component: Where does logic belong? We want to
+see how you decide what a Controller, a Model, or a Service should actually
+"know" about the rest of the system.
+The Contract of Data: How do you ensure data remains valid and predictable
+as it moves from a raw HTTP request into the persistence layer?
+The Interface of Change: How do you design parts of the system (like
+Payments or Notifications) so they can be swapped or extended without a
+total system collapse?
+The Ethics of Security: How do you approach the inherent dangers of the web
+when a framework isn't there to protect you by default?
+The Clarity of Intent: Can a stranger read your Git history and code structure
+and immediately understand your mental model of this business?
+Structural Scalability: How do you organize a codebase to ensure that adding
+the 100th feature is as easy as adding the 5th? We want to see how you
+decouple components to prevent the "spaghetti" effect.
+Pragmatic Performance: Where are the bottlenecks? We are looking for your
+ability to identify expensive operations (N+1 queries, heavy loops, or
+redundant I/O) and your philosophy on writing "lean" code without overoptimizing prematurely.
+The Enforcement of Best Practices: In an environment without a framework to
+guide you, how do you enforce consistency, type safety, and modern
+standards? Show us what "Clean Code" means to you in a raw PHP context.
+The Deliverable
+1. Refactored Source Code: Hosted on a Git platform of your choice.
+2. The "Manifesto" (README): We value this as much as the code. It should
+articulate:
+The Audit: Your honest critique of the inherited mess.
+The Priority Matrix: Why did you choose to refactor X instead of Y?
+The Trade-offs: Every architectural choice has a cost. What did you
+sacrifice for the sake of your chosen design?
+SellNow: Project Instructions 2
+Expectations
+We suggest max 3 days. This is a prioritization exercise. If you spend the whole
+time perfecting the Directory Structure and never touch the Database logic, that
+tells us something about your philosophy. If you fix the Security but leave the code
+messy, that tells us something else.
+Final Note
+This project simulates a real-world inherited codebase.
+There are:
+Inconsistencies
+Shortcuts
+Imperfections
+That is intentional.
+We want to see how you handle reality, not idealized perfection.
+Show us what you value most.
